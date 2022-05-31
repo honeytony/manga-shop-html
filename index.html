@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/style.css" />
+        <title>Manga</title>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="logo"></div>
+                <nav>
+                    <ul id="menu">
+                        <li><a href="#choose">Каталог</a></li>
+                        <li><a href="#footer">Контакты</a></li>
+                        <li><a href="#" class="btn">Войти</a></li>
+                    </ul>
+                </nav>
+                <div class="burger" id="burger-menu"></div>
+            </div>
+        </header>
+        <section id="banner"></section>
+        <section id="main">
+            <form action="#">
+                <div class="items">
+                    <div class="input-search">
+                        <div class="search-icon"></div>
+                        <input type="text" />
+                    </div>
+                    <div class="burger-menu"></div>
+                </div>
+            </form>
+            <h2 class="text">“Манга - это величайшее достижение японской культуры”</h2>
+        </section>
+        <section id="choose">
+            <div class="container">
+                <h3>Выбор читателей</h3>
+                <div class="items">
+                    <div class="item">
+                        <img src="./Assets/Images/items/houl.jpg" alt="" />
+                        <span>Токийский гуль</span>
+                    </div>
+                    <div class="item">
+                        <img src="./Assets/Images/items/uzumaki.jpg" alt="" />
+                        <span>Спираль</span>
+                    </div>
+                    <div class="item">
+                        <img src="./Assets/Images/items/demons.jpg" alt="" />
+                        <span>Клинок, рассекающий демонов</span>
+                    </div>
+                    <div class="item">
+                        <img src="./Assets/Images/items/titans.jpg" alt="" />
+                        <span>Атака Титанов</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about-us">
+            <div class="container">
+                <h3>О нас</h3>
+                <span
+                    >Огромное колличество самой разнообразной манги. Бесплатное чтение без рекламы,
+                    а также удобный поиск и сортировка. Обновления коллекций каждый день
+                </span>
+            </div>
+        </section>
+        <section id="reviews">
+            <div class="container">
+                <h3>Отзывы читателей</h3>
+                <div class="items">
+                    <div class="item">
+                        <div class="header">
+                            <img src="./Assets/Images/avatars/Ellipse 1.jpg" alt="" />
+                            <span>******</span>
+                        </div>
+                        <p>
+                            Огромный выбор манги, в том числе популярных новых, старых, бесплатное
+                            чтение удобный интерфейс
+                        </p>
+                    </div>
+                    <div class="item">
+                        <div class="header">
+                            <img src="./Assets/Images/avatars/Ellipse 2.jpg" alt="" />
+                            <span>******</span>
+                        </div>
+                        <p>
+                            Моя любимая электронная читалка. Прочитала множество манги благодаря
+                            данному приложению!
+                        </p>
+                    </div>
+                    <div class="item">
+                        <div class="header">
+                            <img src="./Assets/Images/avatars/Ellipse 3.jpg" alt="" />
+                            <span>******</span>
+                        </div>
+                        <p>
+                            Много новинок, удобный интерфейс, шрифт, возможность составить
+                            библиотеку из прочитанной манги, бесплатно, не обязательна регистрация.
+                        </p>
+                    </div>
+                    <div class="item">
+                        <div class="header">
+                            <img src="./Assets/Images/avatars/Ellipse 4.jpg" alt="" />
+                            <span>******</span>
+                        </div>
+                        <p>
+                            Огромный выбор манги, в том числе популярных новых, старых, бесплатное
+                            чтение удобный интерфейс
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="registration">
+            <form action="#">
+                <h3>Регистрация</h3>
+                <div class="inputs">
+                    <input type="text" placeholder="логин" />
+                    <input type="text" placeholder="пароль" />
+                    <button>Создать аккаунт</button>
+                    <p>Уже есть аккаунт? <a href="#">Войти</a></p>
+                </div>
+            </form>
+        </section>
+        <footer id="footer">
+            <div class="container">
+                <a href="#">MANGAKU@GMAIL.COM</a>
+                <a href=""><div class="vk-icon"></div></a>
+                <a href=""><div class="vk"></div></a>
+            </div>
+        </footer>
+        <script>
+            var burger = document.getElementById('burger-menu'),
+                menu = document.getElementById('menu');
+
+            burger.addEventListener('click', () => {
+                menu.classList.toggle('show');
+            });
+        </script>
+    </body>
+</html>
